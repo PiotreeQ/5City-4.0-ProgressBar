@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+/* discord.gg/piotreqscripts */
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: min(.83333333vw, 1.8009478673vh);
+    transition: font-size .15s linear;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    color: #fff;
+}
+
+.progress-wrapper {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, #000000 0%, hsla(280, 49%, 23%, 0.9) 99%);
+    min-width: 20rem;
+    height: 6rem;
+    border: .125rem solid #8D3AFE;
+    padding: 1.25rem;
+    display: none; flex-direction: column; gap: 1.25rem;
+    opacity: 0.0;
+}
+
+.progress-main {
+    display: flex; align-items: center; gap: .5rem; width: 100%; 
+}
+
+.progress-main span {
+    font-weight: 600; padding-right: 1rem;
+}
+
+.progress-main i {
+    color: #8D3AFE; margin-top: .15rem;
+}
+
+.progress-time {
+    margin-left: auto;
+    background: #8D3AFE;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #fff;
+    height: .5rem;
+    background: rgba(255, 255, 255, 0.092);
+    border-radius: .25rem;
+}
+
+.bar-fill {
+    width: 50%;
+    background-color: #fff;
+    height: .5rem;
+    background: #8D3AFE;
+    border-radius: .25rem;
+    box-shadow: 0 0 1rem .15rem #8c3afeac;
+}
