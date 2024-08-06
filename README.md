@@ -6,6 +6,7 @@
 local success = exports['fc-progress']:progressBar({
      duration = 5000,
      label = 'Drinking water...',
+     icon = 'fa-solid fa-arrows-rotate',
      useWhileDead = false,
      canCancel = true,
      disable = {
